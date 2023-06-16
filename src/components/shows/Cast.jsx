@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {NotFoundImg} from '../notfound.png'
+import NotFoundImg from '../notfound.png'
 const Cast = ({ cast }) => {
     return (
       <CastList>

@@ -1,7 +1,7 @@
 import { useStarredShows } from "../../lib/useStarredShows";
 import ShowCard from "./ShowCard";
 import { FlexGrid } from "../common/FlexGrid";
-import {NotFoundImg} from '../notfound.png'
+import NotFoundImg from '../notfound.png'
 
 
 
