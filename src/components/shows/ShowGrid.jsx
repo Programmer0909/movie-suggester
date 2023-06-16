@@ -1,6 +1,7 @@
 import { useStarredShows } from "../../lib/useStarredShows";
 import ShowCard from "./ShowCard";
 import { FlexGrid } from "../common/FlexGrid";
+import {NotFoundImg} from '../notfound.png'
 
 
 
@@ -22,7 +23,7 @@ const ShowGrid = ({ shows }) => {
           key={data.show.id}
           id={data.show.id}
           name={data.show.name}
-          image={data.show.image ? data.show.image.medium : "/notfound.png"}
+          image={data.show.image ? data.show.image.medium : NotFoundImg}
           summary={data.show.summary}
           onStarMeClick={onStarMeClick}
           isStarred={starredShows.includes(data.show.id)}
@@ -34,4 +35,3 @@ const ShowGrid = ({ shows }) => {
 
 export default ShowGrid;
 
-// C:\Users\LENOVO\OneDrive\Desktop\New folder (4)\Box-office-app\box-office\public\notfound.png
