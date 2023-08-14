@@ -7,9 +7,9 @@ import Seasons from "../components/shows/Seasons";
 import Cast from "../components/shows/Cast";
 import { TextCenter } from "../components/common/TextCenter";
 import styled from "styled-components";
+
 const Show = () => {
   const { showId } = useParams();
-
   const [showData, setShowData] = useState(null);
   const [showError, setShowError] = useState(null);
 

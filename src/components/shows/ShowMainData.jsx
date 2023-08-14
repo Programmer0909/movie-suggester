@@ -3,11 +3,10 @@ import { StarIcon } from "../common/StarIcon";
 import NotFoundImg from '../notfound.png'
 
 const ShowMainData = ({ image, name, rating, summary, genres }) => {
-  // return <h1>Hello</h1>
   return (
     <MainDataWrapper>
       <div className="img-wrap">
-        <img src={image ? image.original : NotFoundImg} alt={name} /> ;
+        <img src={image ? image.original : NotFoundImg} alt={name} /> 
       </div>
       <DataSection>
         <Headline>
@@ -18,11 +17,8 @@ const ShowMainData = ({ image, name, rating, summary, genres }) => {
           </div>
         </Headline>
         <Summary>
-          <div dangerouslySetInnerHTML={{ __html: summary }}></div>
+          <div dangerouslySetInnerHTML={{ __html: summary }}></div> 
         </Summary>
-        {/* As the summary is html so rendering it normally would cause the browser to
-        interpret html as text so we use this property so that browser reads it as html */}
-
         <div>
           Genres :
           <Genres>
@@ -104,8 +100,8 @@ const Genres = styled.div`
   span {
     margin: 6px;
     margin-bottom: 0;
-    color: blue;
-    background-color: #d0c9ff;
+    color: magenta;
+    background-color: #fff;
     padding: 3px 13px;
     border-radius: 20px;
     font-size: 14px;

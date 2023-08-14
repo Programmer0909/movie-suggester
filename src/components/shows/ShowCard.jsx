@@ -18,7 +18,6 @@ const ShowCard = ({ name, image, id, summary, onStarMeClick, isStarred }) => {
           Read More
         </Link>
         <StarBtn type="button" onClick={() => onStarMeClick(id)} className={isStarred && 'animate'}>
-          {/* {isStarred ? "Unstar me" : "Star me"} */}
           <StarIcon active ={isStarred}/>
         </StarBtn>
       </ActionSection>

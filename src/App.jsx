@@ -4,13 +4,10 @@ import Starred from "./pages/Starred";
 import Show from "./pages/Show";
 import MainLayout from "./components/MainLayout";
 import React from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { GlobalTheme } from "./theme";
-const queryClient = new QueryClient();
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
       <GlobalTheme>
         <HashRouter>
           <Routes>
@@ -23,7 +20,6 @@ function App() {
           </Routes>
         </HashRouter>
       </GlobalTheme>
-    </QueryClientProvider>
   );
 }
 

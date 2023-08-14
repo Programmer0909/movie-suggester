@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import {  Outlet } from "react-router-dom";
 import Navs from "./Navs";
 import AppTitle from "./AppTitle";
 const MainLayout = () => {

@@ -3,8 +3,6 @@ import ShowCard from "./ShowCard";
 import { FlexGrid } from "../common/FlexGrid";
 import NotFoundImg from '../notfound.png'
 
-
-
 const ShowGrid = ({ shows }) => {
   const [starredShows, dispatchStarred] = useStarredShows();
   const onStarMeClick = (showId) => {
